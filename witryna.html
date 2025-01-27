@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>U książęca</title>
+		<link href="witryna_styles.css" rel="stylesheet" type="text/css"/>
+	</head>
+	
+	<body>
+		<input type="radio" name="item" checked="checked" id="section1"/>
+		<input type="radio" name="item" id="section2"/>
+		<input type="radio" name="item" id="section3"/>
+		
+		<nav class="nav">
+			<label class="nav__item" for="section1"></label>
+			<label class="nav__item" for="section2"></label>
+			<label class="nav__item" for="section3"></label>
+		</nav>
+		
+		<section>
+			<div id="main_text">
+				<b>Warsztat gitarowy "U książęca"</b>
+				<br>
+				<i id="citation">Tworzymy z najlepszego drzewa najlepszy dźwięk.</i>
+				<p id="text_after_main">
+					Robimy gitary
+					<br>
+					Naprawiamy gitary
+				</p>
+			</div>
+			<div>
+				
+			</div>
+				
+			<div id="contact">
+				<img id="phone_icon" src="pictures/PngItem_278510.png" width="25" height="25"/>
+				+48-xxx-xxx-xxx
+				<br>
+				<img id="phone_icon" src="pictures/PngItem_5324130.png" width="25" height="25"/>
+				xxxxxxxx@gmail.com
+			</div>
+			<div>
+			</div>
+		</section>
+		
+		<section>
+			<div id="description">
+				<img class="img_o_firmie" id="img_1" src="pictures/Craftsman-Repair-Wood-Instrument.jpg" height="130" width="220">
+				<p class="text">
+				Nasz warsztat działa już prawie 30 lat.
+				Tutaj możesz zamówić sobie naprawianie ulubionego instrumentu muzycznego albo zamówić nowy,
+				który będzie twoim najlepszym przyjacielem w karierze albo hobby muzycznym.
+				</p>
+				<p>
+				Z naszą nową usługą "Zamów mistrza" możesz zamówić mistrza do swojego domu.
+				W takim przypadku mistrz spojrzy na Twój instrument i zdecyduje, co można z nim zrobić.
+				W przypadku drobnych usterek naprawi instrument od razu. Jeśli jednak sytuacja będzie poważnjejsza,
+				zabierze go do warsztatu.
+				</p>
+			</div>
+			
+			<div class="opinion" id="opinion_1">
+				<img class="opinion_img" src="pictures/woman1.png" width="100" height="100"/>
+				<p>
+				Kate, <br>Toruń
+				</p>
+				<br>
+				<br>
+				<p class="opinion_content">
+					Bardzo fajny warsztat!
+					Chciałam naprawić starą gitarę, którą dostałam od kochanej babci.
+					Gitara została dosłownie przywrócona do pierwotnego stanu!
+					Jej dźwięk przenosi mnie do tamtych świetnych czasów, kiedy babcia grała mi swoje ulubione piosenki.
+				</p>				
+			</div>
+			
+			<div class="opinion" id="opinion_2">
+				<img class="opinion_img" src="pictures/man.png" width="90" height="100"/>
+				<p>
+					David, <br>Gdańsk
+				</p>
+				<br>
+				<br>
+				<p class="opinion_content">
+					Zamówiłem tutaj nową gitarę. To był bardzo fajny i ciekawy proces.
+					Mistrz bardzo poważnie wysłuchał moich życzeń, priorytetów i tego, co chciałem osiągnąć dzięki instrumentowi.
+					Na końcu jestem bardzo zadowolony ze swojej naprawdę własnej gitary.
+				</p>
+			</div>
+			
+			<div class="opinion" id="opinion_3">
+				<img class="opinion_img" src="pictures/woman2.png" width="90" height="100"/>
+				<p>
+					Monika, <br>Poznań
+				</p>
+				<br>
+				<br>
+				<p class="opinion_content">
+					Prawie przed koncertem w szkole plastycznej szyjka mojej gitary była wygięta i
+					nie potrafiłem jej ustawić. Na szczęście mistrz był w stanie to szybko naprawić i
+					dosłownie w ciągu kilku godzin moja gitara była gotowa do grania.
+				</p>
+			</div>
+				
+			
+		</section>
+		
+		<section>
+			<div id="contact_2">
+				<br>
+				<img id="phone_icon" src="pictures/PngItem_278510.png" width="25" height="25"/>
+				+48-xxx-xxx-xxx
+				<br>
+				<img id="phone_icon" src="pictures/PngItem_5324130.png" width="25" height="25"/>
+				xxxxxxxx@gmail.com
+				<br>
+				<img id="phone_icon" src="pictures/PngItem_1171535.png" width="25" height="25"/>
+				87-100, Toruń, ul. xxxxxxx
+			</div>
+			
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153625.10796981255!2d18.461466464374585!3d53.01331025618898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470334e1d994ec19%3A0x744a729a586a89c4!2z0KLQvtGA0YPQvdGM!5e0!3m2!1sru!2spl!4v1610978277942!5m2!1sru!2spl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			
+			<div id="order">
+				<p>Zamów mistrza!</p>
+				<p>Tutaj możesz wpisać swoje dane kontaktowe, 
+				i nasz menedżer od razu do Ciebie zadzwoni.</p>
+				<form action="/order_control_page" method="post">
+					<div align=right class=text_field>
+						<label for="name">Imie: *</label>
+						<input type="text" id="name" name="user_name" size=26 required>
+					</div>
+				
+					<div align=right class=text_field>
+						<label for="mail">E-mail: *</label>
+						<input type="email" id="mail" name="user_mail" size=26 required>
+					</div>
+				
+					<div align=right class=text_field>
+						<label for="mail">Telefon: *</label>
+						<input type="email" id="mail" name="user_phone" size=26 required>
+					</div>
+					
+					<div align=right>
+						<button type="submit" class="button"><img src="pictures/PngItem_3073450.png" width="25" height="25"/></button>
+					</div>
+				</form>	
+			</div>
+		</section>
+		
+	</body>
+</html>
